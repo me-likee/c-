@@ -17,3 +17,27 @@ Console.WriteLine(yenideger);
 
 int int21=int20+Convert.ToInt32(str20);
 Console.WriteLine(int21);
+
+//try Catch 
+try
+{
+ Console.WriteLine("Yeni Şifre Oluşturunuz!");
+ object sifre=Console.ReadLine();
+}
+//catch(Exception ex)
+//{
+//Console.WriteLine("Hata :"+ex.HelpLink.ToString());
+//}
+
+catch(ArgumentNullException ex)
+{
+Console.WriteLine("Şifrenizde boşluk olamaz");
+}
+catch(FormatException ex)
+{
+Console.WriteLine("Şifrenizde uygun olmayan veri tipi mevcuttur");
+}
+finally
+{
+    Console.Write("Şifre Oluşturmaİşlemi Başarılıdır");
+}
