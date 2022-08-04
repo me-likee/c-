@@ -41,3 +41,10 @@ finally
 {
     Console.Write("Şifre Oluşturmaİşlemi Başarılıdır");
 }
+
+
+int time=DateTime.Now.Hour;
+string sonuc=null;
+sonuc=time>6 && time<11 ? "Günaydın"  :time<18 && time>11 ? "İyi akşamlar" :"İyi Geceler";
+Console.WriteLine(sonuc);
+Console.WriteLine(time);
